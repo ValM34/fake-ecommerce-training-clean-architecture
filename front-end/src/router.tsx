@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Category from "./pages/category/Category";
 import Product from "./pages/product/Product";
-import Card from "./pages/card/Card";
+import Cart from "./pages/cart/Cart";
 
 export const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
     element: <Product />,
   },
   {
-    path: "/card",// @TODO rendre dynamique
-    element: <Card />,
+    path: "/cart",// @TODO rendre dynamique
+    element: <Cart />,
   },
 ]);
