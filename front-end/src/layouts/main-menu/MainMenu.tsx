@@ -13,8 +13,8 @@ import {
   TabPanel,
   TabPanels,
 } from '@headlessui/react'
-import { Bars3Icon, MagnifyingGlassIcon, ShoppingCartIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Bars3Icon, MagnifyingGlassIcon, ShoppingCartIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
 const navigation = {
   categories: [
@@ -427,14 +427,14 @@ export default function Example() {
                       <span aria-hidden="true" className="mx-4 h-6 w-px bg-gray-200 lg:mx-6" />
 
                       <div className="flow-root">
-                        <a href="#" className="group -m-2 flex items-center p-2">
+                        <Link to="/cart" className="group -m-2 flex items-center p-2">
                           <ShoppingCartIcon
                             aria-hidden="true"
                             className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                           />
                           <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
                           <span className="sr-only">items in cart, view bag</span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
